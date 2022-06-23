@@ -10,9 +10,8 @@ class Datos_facturas(models.Model):
 	tipo_factura=fields.Selection([('PUE','PUE - Pago en una sola exhibición'),
 	                           ('PPD','PPD - Pago en parcialidades o diferido')])
 
-#realizar las validaciones al momento de guardar
-@api.constrains('tipo_factura')
-def _validate(self):
-    if self.tipo_factura:
-    	raise ValidationError("Seleccione el Metodo de Pago e intente nuevamente.")
+@api.constrains('l10n_mx_edi_payment_policy')
+def _validate_payment_policy(self):
+    if self.l10n_mx_edi_payment_policy = 'PUE':
+    	raise ValidationError("El método seleccionado es PUE")
 
