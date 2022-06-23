@@ -60,7 +60,7 @@ class ImportProduct(models.TransientModel):
                 if line.get('taxes of saleble product'):
                     p = re.compile(r'\d+\.\d+')
                     amount = [float(i) for i in p.findall(str(line.get('taxes of saleble product')))]
-                    name = 'Tax' + ' ' + str(amount[0]) + '%'
+                    name = 'IVA' + ' ' + str(amount[0]) + '%'
                     customer_tax = tax.search(
                         [('name', '=', name), ('type_tax_use', '=', 'sale')])
                     if not customer_tax:
@@ -73,7 +73,7 @@ class ImportProduct(models.TransientModel):
                 if line.get('taxes of purchase product'):
                     p = re.compile(r'\d+\.\d+')
                     amount = [float(i) for i in p.findall(str(line.get('taxes of purchase product')))]
-                    name = 'Tax' + ' ' + str(amount[0]) + '%'
+                    name = 'IVA' + ' ' + str(amount[0]) + '%'
                     vendor_tax = tax.search(
                         [('name', '=', name), ('type_tax_use', '=', 'purchase')])
                     if not vendor_tax:
