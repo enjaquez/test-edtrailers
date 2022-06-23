@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_import.product,import.product,model_import_product,,1,1,1,1
+
+import_product_variant_axis.access_open_product,access_open_product,import_product_variant_axis.model_open_product,,1,1,1,1

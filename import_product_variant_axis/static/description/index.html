@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Import Product Variant from CSV/Excel in Odoo (Import CSV and Excel)</title>
+</head>
+<body>
+    <div class="container">
+       <hr>
+      <div class="row">
+        <div class="col-lg-2" style="text-align: left;">
+          <img src="images/axis-logo.png" alt="axistechnolabs all odoo apps" class="img-fluid" >
+        </div>
+        <div class="col-lg-3 justify-content-between align-self-center" style="border-left: 1px solid #e5e5e5;border-right: 1px solid #e5e5e5;align-self: center;justify-content: space-between;padding: 0px 12px !important;">
+          <div class="text-right">
+            <a href="https://apps.odoo.com/apps/modules/browse?search=axis+technolabs" target="_blank" class="btn btn-sm" style="font-size:14px;font-weight:500;background-color:#406d8d;color:#fff;border-radius: 25px;padding: 5px 10px 5px 10px;"><i class="fa fa-list-alt mr-1"></i>Axis Technolabs Odoo Apps</a>
+          </div>
+        </div>
+        <div class="col-lg-7 justify-content-between align-self-center" style="align-self: center !important;text-align: right;">
+          
+          <div class="mt-md-0 mt-4 mb-3 mb-lg-0">
+            <span class="fa fa-support" style="margin-right: 2px;color:#6c55bd; font-size:18px; vertical-align:middle"></span>
+            <span style="color:#406d8d; font-size:14px;font-weight: 800;">Support :</span>
+            <div style="display: inline-block;">
+              <a href="mailto:business@axistechnolabs.com?subject=Odoo Import product variants" target="_blank" style="color:#406d8d;display:inline-block;padding: 3px 7px;border: 1px solid #6c55bd;border-radius: 5px;margin: 0 0 3px 0;">
+                <span class="fa fa-envelope-o" style="margin-right: 2px;color:#6c55bd; font-size:18px;"></span>
+                <span style="color:#406d8d; font-size:14px;font-weight: 500;">Email</span>
+              </a>
+            </div>
+            <span class="btn btn-sm" style="padding: 4px 12px 4px 6px !important;font-size:14px; font-weight:500;margin-bottom: 2px !important; border-radius: 25px; background-color:#406d8d; color:#fff"><span style="position: relative;background-color: white;border-radius: 33px;padding: 2px;display: inline-flex;"><i class="fa fa-check" style="color: #406d8d;"></i></span> Community</span>
+            <span class="btn btn-sm" style="padding: 4px 10px 4px 6px !important;font-size:14px; font-weight:500;margin-bottom: 2px !important; border-radius: 25px; background-color:#406d8d; color:#fff"><span style="position: relative;background-color: white;border-radius: 33px;padding: 2px;display: inline-flex;"><i class="fa fa-check" style="color: #406d8d;"></i></span> Enterprise</span>
+            <span class="btn btn-sm" style="padding: 4px 10px 4px 6px !important;font-size:14px; font-weight:500;margin-bottom: 2px !important; border-radius: 25px; background-color:#406d8d; color:#fff"><span style="position: relative;background-color: white;border-radius: 33px;padding: 2px;display: inline-flex;"><i class="fa fa-check" style="color: #406d8d;"></i></span> Odoo.sh</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+        <!-- Begin: Import Product Variant from CSV/Excel in odoo -->
+        <div class="" style="text-align: center;">
+          <h1 style="color:#bd4398; font-size:26px; padding-bottom:10px">Import Product Variant from CSV/Excel file for Advance Import Products Variant in odoo website<br> <a href="https://apps.odoo.com/apps/modules/14.0/import_product_variant_axis/">Import bulk product variants data in odoo using excel or CSV</a></h1>
+
+           <h2 style="color:#bd4398">Import products and product variants using CSV/Excel in odoo</h2>
+           <p style="text-align:justify;color: #091e42;font-size: 20px;padding-bottom: 10px;"> Product import odoo module helps to import products with product variants from the CSV / Excel file data. This module enable the feature to import custom fields also. this will auto-create or update product and product variant from CSV/Excel. You can identify the same name product/product variant in field.</p>
+      
+         <a href="https://youtu.be/T5cJXSVdcZM" target="_blank"><img src="images/video.jpeg" style="max-width:100%; text-align:center; margin:0 auto; display:block" alt="Import Product Variant from CSV/Excel file in odoo" ></a>
+        </div>
+        <h2 class="oe_slogan" style="color: #1c74cb;margin-top: 20px;text-align: center;">This module is supported in odoo community and enterprise edition</h2>
+        <!-- End: Import Product Variant from CSV/Excel in odoo -->
+
+        <!-- Begin: Import Product Variant from CSV/Excel features -->
+        <div style="padding-top:5px;">
+            <h1 style="color: #bd4398;font-size: 32px;text-align: center;background-color: #d9e2ea;">Features of import product variants from CSV/Excel odoo module</h1><br>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-12" style="margin-bottom: 30px;">
+          <div style="-webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);border-radius: 10px;padding: 10px 0px 0px 0px;border: 1px solid cadetblue;
+min-height: 140px;">
+              <div class="row" style="margin:0;">
+                <div class="col-3">
+                  <img src="images/1-import.png" style="max-width:100%;position: absolute;width: 55px;top: 50%;transform: translateY(-50%);text-align: center;margin: 0 auto;display: block;left: 0;right: 0;" />
+                </div>
+                <div class="col-9" style="padding-left:0;">
+                  <h2 style="font-weight: 500;font-size: 18px;color:#b52cb9;">Import product variants in odoo</h2>
+                  <p style="color:#000000;">Import product variants by name, barcode reference fields</p>
+                </div>
+              </div>    
+          </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12" style="margin-bottom: 30px;">
+          <div style="-webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);border-radius: 10px;padding: 10px 0px;border: 1px solid cadetblue;
+min-height: 140px;">
+              <div class="row" style="margin:0;">
+                <div class="col-3">
+                   <img src="images/2-inventory.png" alt="Import product variants in odoo, product vairiants import in odoo" style="max-width:100%;position: absolute;width: 55px;top: 50%;transform: translateY(-50%);text-align: center;margin: 0 auto;display: block;left: 0;right: 0;" />
+                </div>
+                <div class="col-9" style="padding-left:0;">
+                  <h2 style="font-weight: 500;font-size: 18px;color:#b52cb9;">Create product variants</h2>
+                  <p style="color:#000000;">Create or update product variants by barcode, name & internal reference in odoo website</p>
+                </div>
+              </div>    
+          </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12" style="margin-bottom: 30px;">
+          <div style="-webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);border-radius: 10px;padding: 10px 0px;border: 1px solid cadetblue;
+min-height: 140px;">
+              <div class="row" style="margin:0;">
+                <div class="col-3">
+                  <img src="images/3-shopping-online.png" alt="product variant import in odoo v13 , v14" style="max-width:100%;position: absolute;width: 55px;top: 50%;transform: translateY(-50%);text-align: center;margin: 0 auto;display: block;left: 0;right: 0;" />
+                </div>
+                <div class="col-9" style="padding-left:0;">
+                  <h2 style="font-weight: 500;font-size: 18px;color:#b52cb9;">Data import alert</h2>
+                  <p style="color:#000000;">When you import product variant in odoo it display alert message for success</p>
+                </div>
+              </div>    
+          </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12" style="margin-bottom: 30px;">
+          <div style="-webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);border-radius: 10px;padding: 10px 0px;border: 1px solid cadetblue;
+min-height: 140px;">
+              <div class="row" style="margin:0;">
+                <div class="col-3">
+                  <img src="images/4-csv.png" alt="odoo all import Product Variant" style="max-width:100%;position: absolute;width: 55px;top: 50%;transform: translateY(-50%);text-align: center;margin: 0 auto;display: block;left: 0;right: 0;" />
+                </div>
+                <div class="col-9" style="padding-left:0;">
+                  <h2 style="font-weight: 500;font-size: 18px;color:#b52cb9;">Sample CSV or Excel</h2>
+                  <p style="color:#000000;">This module contains sample file of CSV or Excel to import product variants in odoo</p>
+                </div>
+              </div>    
+          </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12" style="margin-bottom: 30px;">
+          <div style="-webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);border-radius: 10px;padding: 10px 0px;border: 1px solid cadetblue;
+min-height: 140px;">
+              <div class="row" style="margin:0;">
+                <div class="col-3">
+                 <img src="images/5_packing_list.png" alt="Import Product Variant Wizard in odoo" style="max-width:100%;position: absolute;width: 55px;top: 50%;transform: translateY(-50%);text-align: center;margin: 0 auto;display: block;left: 0;right: 0;" />
+                </div>
+                <div class="col-9" style="padding-left:0;">
+                  <h2 style="font-weight: 500;font-size: 18px;color:#b52cb9;">Import Mass / Bulk records</h2>
+                  <p style="color:#000000;">Very useful for Import bulk product vairiants records in odoo using CSV or Excel</p>
+                </div>
+              </div>    
+          </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-12" style="margin-bottom: 30px;">
+          <div style="-webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);border-radius: 10px;padding: 10px 0px;border: 1px solid cadetblue;
+min-height: 140px;">
+              <div class="row" style="margin:0;">
+                <div class="col-3">
+                <img src="images/6-fast-time.png" alt="steps for product vairiants import in odoo v13, v14" style="max-width:100%;position: absolute;width: 55px;top: 50%;transform: translateY(-50%);text-align: center;margin: 0 auto;display: block;left: 0;right: 0;" />
+                </div>
+                <div class="col-9" style="padding-left:0;">
+                  <h2 style="font-weight: 500;font-size: 18px;color:#b52cb9;">Easy and Save your Time</h2>
+                  <p style="color:#000000;">Import products and product Variant odoo module is very easy and save you time</p>
+                </div>
+              </div>    
+          </div>
+          </div>
+          </div>
+        </div>
+
+         <p style="color: #b52cb9;font-size: 20px;padding: 10px 0px 5px 5px;background-color: #e6eef4;"><b>Sample Data File Format for Import product variants</b></p>
+                   <br/>
+          <img src="images/ab.png" style="max-width:100%;border: 1px solid #1b4080;" /><br/><br/>
+          <img src="images/ca.png" style="max-width:100%;border: 1px solid #1b4080;" /><br/>
+
+          <p style="color:#ff2424;font-size:20px;padding-bottom:10px;text-align: justify;">
+            If you want to import extra fields from default odoo field using sample files, we will add those on our import module. You can buy our module and contact us on <a href="mailto:business@axistechnolabs.com">business@axistechnolabs.com</a>
+          </p>
+
+          <div class="shadow-sm" style="border-radius:5px">
+            <div class="panel panel-primary" style="margin:15px 0; border:2px solid #e4e6e8; border-radius:5px">
+              <div class="panel-heading" style="padding:10px 20px; background-color:#e4e6e8">
+                <h2 class="panel-title" style="color:#04ad86; font-size:24px; font-family:'Montserrat', sans-serif; margin:0"><b>Checked Import Product Variant Option to get option of import menu</b></h2>
+              </div>
+              <div class="panel-body" style="padding:0 10px 10px 10px">
+                <hr>
+                <span>
+                   <img src="images/1.png" alt="odoo Checked Import Product Variant Option" style="max-width:100%;border: 1px solid #1b4080;" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="shadow-sm" style="border-radius:5px">
+            <div class="panel panel-primary" style="margin:15px 0; border:2px solid #e4e6e8; border-radius:5px">
+              <div class="panel-heading" style="padding:10px 20px; background-color:#e4e6e8">
+                <h2 class="panel-title" style="color:#04ad86; font-size:24px; font-family:'Montserrat', sans-serif; margin:0"><b>Import Product Variant Menu</b></h2>
+              </div>
+              <div class="panel-body" style="padding:0 10px 10px 10px">
+                <hr>
+                <span>
+                    <img src="images/2.png" alt="Import Product Variant Menu in odoo" style="max-width:100%;border: 1px solid #1b4080;" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow-sm" style="border-radius:5px">
+            <div class="panel panel-primary" style="margin:15px 0; border:2px solid #e4e6e8; border-radius:5px">
+              <div class="panel-heading" style="padding:10px 20px; background-color:#e4e6e8">
+                <h2 class="panel-title" style="color:#04ad86; font-size:24px; font-family:'Montserrat', sans-serif; margin:0"><b>Import Product Variant Wizard</b></h2>
+              </div>
+              <div class="panel-body" style="padding:0 10px 10px 10px">
+                <hr>
+                <span>
+                  <img src="images/3.png" alt="Odoo Import Products Variant Wizard" style="max-width:100%;border: 1px solid #1b4080;" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+           <div class="shadow-sm" style="border-radius:5px">
+            <div class="panel panel-primary" style="margin:15px 0; border:2px solid #e4e6e8; border-radius:5px">
+              <div class="panel-heading" style="padding:10px 20px; background-color:#e4e6e8">
+                <h2 class="panel-title" style="color:#04ad86; font-size:24px; font-family:'Montserrat', sans-serif; margin:0"><b>Sucess Message after Imported Product Variants</b></h2>
+              </div>
+              <div class="panel-body" style="padding:0 10px 10px 10px">
+                <hr>
+                <span>
+                    <img src="images/4.png" alt="how to import Product Variant" style="max-width:100%;border: 1px solid #1b4080;" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow-sm" style="border-radius:5px">
+            <div class="panel panel-primary" style="margin:15px 0; border:2px solid #e4e6e8; border-radius:5px">
+              <div class="panel-heading" style="padding:10px 20px; background-color:#e4e6e8">
+                <h2 class="panel-title" style="color:#04ad86; font-size:24px; font-family:'Montserrat', sans-serif; margin:0"><b>The following product template fields are imported.</b></h2>
+              </div>
+              <div class="panel-body" style="padding:0 10px 10px 10px">
+                <hr>
+                <span>
+                    <img src="images/6.png" style="max-width:100%;border: 1px solid #1b4080;" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow-sm" style="border-radius:5px">
+            <div class="panel panel-primary" style="margin:15px 0; border:2px solid #e4e6e8; border-radius:5px">
+              <div class="panel-heading" style="padding:10px 20px; background-color:#e4e6e8">
+                <h2 class="panel-title" style="color:#04ad86; font-size:24px; font-family:'Montserrat', sans-serif; margin:0"><b>Imported Product Variant Deatails view.</b></h2>
+              </div>
+              <div class="panel-body" style="padding:0 10px 10px 10px">
+                <hr>
+                <span>
+                  <img src="images/5.png" alt="where to see the imported Product Variant" style="max-width:100%;border: 1px solid #1b4080;" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="shadow-sm" style="border-radius:5px">
+          <div class="panel panel-primary" style="margin:15px 0; border:2px solid #e4e6e8; border-radius:5px">
+              <div class="panel-heading" style="padding:10px 20px; background-color:#e4e6e8">
+                <h2 class="panel-title" style="color:#04ad86; font-size:24px; font-family:'Montserrat', sans-serif; margin:0"><b>Sales tab in the Product</b></h2>
+              </div>
+              <div class="panel-body" style="padding:0 10px 10px 10px">
+                <hr>
+                <span>
+                  <img src="images/7.png" alt="product vairiants options to import in odoo axistechnolabs apps" style="max-width:100%;border: 1px solid #1b4080;" />
+                </span>
+              </div>
+          </div>
+        </div>
+         
+
+        <div class="shadow-sm" style="border-radius:5px">
+          <div class="panel panel-primary" style="margin:15px 0; border:2px solid #e4e6e8; border-radius:5px">
+              <div class="panel-heading" style="padding:10px 20px; background-color:#e4e6e8">
+                <h2 class="panel-title" style="color:#04ad86; font-size:24px; font-family:'Montserrat', sans-serif; margin:0"><b>Click on Variant button to check product variants</b></h2>
+              </div>
+              <div class="panel-body" style="padding:0 10px 10px 10px">
+                <hr>
+                <span>
+                   <img src="images/10.png" alt="configure odoo for product variant import" style="max-width:100%;border: 1px solid #1b4080;" />
+                </span>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="shadow-sm" style="border-radius:5px">
+           <div class="panel panel-primary" style="margin:15px 0; border:2px solid #e4e6e8; border-radius:5px">
+              <div class="panel-heading" style="padding:10px 20px; background-color:#e4e6e8">
+                <h2 class="panel-title" style="color:#04ad86; font-size:24px; font-family:'Montserrat', sans-serif; margin:0"><b>Product variant details with quantity</b></h2>
+              </div>
+              <div class="panel-body" style="padding:0 10px 10px 10px">
+                <hr>
+                <span>
+                   <img src="images/13.png" alt="best product variant odoo app download" style="max-width:100%;border: 1px solid #1b4080;" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow-sm" style="border-radius:5px">
+          <div class="panel panel-primary" style="margin:15px 0; border:2px solid #e4e6e8; border-radius:5px">
+              <div class="panel-heading" style="padding:10px 20px; background-color:#e4e6e8">
+                <h2 class="panel-title" style="color:#04ad86; font-size:24px; font-family:'Montserrat', sans-serif; margin:0"><b>Click on Configure button for Product Configuration</b></h2>
+              </div>
+              <div class="panel-body" style="padding:0 10px 10px 10px">
+                <hr>
+                <span>
+                   <img src="images/12.png" alt="import odoo product variant" style="max-width:100%;border: 1px solid #1b4080;" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="shadow-sm" style="border-radius:5px">
+          <div class="panel panel-primary" style="margin:15px 0; border:2px solid #e4e6e8; border-radius:5px">
+              <div class="panel-heading" style="padding:10px 20px; background-color:#e4e6e8">
+                <h2 class="panel-title" style="color:#04ad86; font-size:24px; font-family:'Montserrat', sans-serif; margin:0"><b>Product variants imported succesfully.</b></h2>
+              </div>
+              <div class="panel-body" style="padding:0 10px 10px 10px">
+                <hr>
+                <span>
+                    <img src="images/11.png" alt="all import in odoo apps" style="max-width:100%;border: 1px solid #1b4080;" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <h2 class="oe_slogan text-center"><a href="https://apps.odoo.com/apps/modules/browse?search=Axis+technolabs" style="color:#4e4e4e!important">You may also like Axis Technolabs apps :</a></h2>
+     <div class="row justify-content-center">
+       <div class="col-lg-4 col-md-6 text-center" style="margin-bottom:20px">
+            <div class="page_design_portfolio">
+              <div class="page_design_title" style="border-bottom:1px solid #f0f0f0; margin-bottom:10px; padding:8px; background-color:#d9cfcf; border-radius:5px">
+                <h2 style="margin-bottom:0; color:#333; font-size:16px">Doctor Appointment Booking in odoo, Clinic Website Appointment Book in Odoo, Doctor calendar booking slot, Patient appointment booking and payment online</h2>
+              </div>
+              <a href="https://apps.odoo.com/apps/modules/14.0/doctor_appointment_booking_advance_axis/" target="_blank">
+                <div class="shadow overflow-hidden" style="width:100%; height:180px">
+                  <img class="img-fluid" alt="Doctor Appointment Booking in odoo, Clinic Website Appointment Book in Odoo, Doctor calendar booking slot, Patient appointment booking and payment online" src="images/doctor_appointment.png">
+                </div></a>
+                <a href="https://apps.odoo.com/apps/modules/14.0/doctor_appointment_booking_advance_axis/" target="_blank" style="font-size:24px; padding-top:12px; padding-bottom:15px; line-height:normal; border-radius:5px; color:#fff; text-transform:uppercase; display:inline-block; max-width:366px; width:100%; margin-top:30px; margin-bottom:30px; background-color:#00a1b1">Buy Now</a>
+              </div>
+            </div>
+          <div class="col-lg-4 col-md-6 text-center" style="margin-bottom:20px">
+            <div class="page_design_portfolio">
+              <div class="page_design_title" style="border-bottom:1px solid #f0f0f0; margin-bottom:10px; padding:8px; background-color:#d9cfcf; border-radius:5px">
+                <h2 style="margin-bottom:0; color:#333; font-size:16px">Sales Contract Subscription and Recurring Invoice in odoo, Sales Contract Subscription in odoo and Recurring Invoice in odoo, Subscription management in odoo</h2>
+              </div>
+              <a href="https://apps.odoo.com/apps/modules/14.0/sales_contract_subscription_and_recurring_invoice_axis/" target="_blank">
+                <div class="shadow overflow-hidden" style="width:100%; height:180px">
+                  <img class="img-fluid" alt="Sales Contract Subscription and Recurring Invoice in odoo, Sales Contract Subscription in odoo and Recurring Invoice in odoo, Subscription management in odoo" src="images/sales_contract_subscription.jpg">
+                </div></a>
+                <a href="https://apps.odoo.com/apps/modules/14.0/sales_contract_subscription_and_recurring_invoice_axis/" target="_blank" style="font-size:24px; padding-top:12px; padding-bottom:15px; line-height:normal; border-radius:5px; color:#fff; text-transform:uppercase; display:inline-block; max-width:366px; width:100%; margin-top:30px; margin-bottom:30px; background-color:#00a1b1">Buy Now</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center" style="margin-bottom:20px">
+              <div class="page_design_portfolio">
+                <div class="page_design_title" style="border-bottom:1px solid #f0f0f0; margin-bottom:10px; padding:8px; background-color:#d9cfcf; border-radius:5px">
+                  <h2 style="margin-bottom:0; color:#333; font-size:16px">Product Warranty Management in odoo, Product Warranty Claim, Verify and set warranty period days, months, years, Dashboard Reports, Ticket Filters,Document Attachment</h2>
+                </div>
+                <a href="https://apps.odoo.com/apps/modules/14.0/product_warranty_axis/">
+                  <div class="shadow overflow-hidden" style="width:100%; height:180px">
+                    <img class="img-fluid" alt="Product Warranty Management in odoo, Product Warranty Claim, Verify and set warranty period days, months, years" src="images/warranty_module_image.png" style="height:auto; width:100%">
+                  </div></a>
+                  <a href="https://apps.odoo.com/apps/modules/14.0/product_warranty_axis/" target="_blank" style="font-size:24px; padding-top:12px; padding-bottom:15px; line-height:normal; border-radius:5px; color:#fff; text-transform:uppercase; display:inline-block; max-width:366px; width:100%; margin-top:30px; margin-bottom:30px; background-color:#00a1b1">Buy Now</a>
+                </div>
+              </div>
+      </div>
+
+ 
+
+      <div class="row justify-content-center">
+       <div class="col-lg-4 col-md-6 text-center" style="margin-bottom:20px">
+            <div class="page_design_portfolio">
+              <div class="page_design_title" style="border-bottom:1px solid #f0f0f0; margin-bottom:10px; padding:8px; background-color:#d9cfcf; border-radius:5px">
+                <h2 style="margin-bottom:0; color:#333; font-size:16px">Import data in odoo for Sales, Purchase, Invoice, Import Stock Inventory, Import Product, Bill of material(BOM), Payment, Bank Statement, All Entry, Order Picking, Product, Customer, Stock, Account charts, Sales Pricelist, Supplier all data import in odoo using EXCEL or CSV</h2>
+              </div>
+              <a href="https://apps.odoo.com/apps/modules/13.0/import_bridge_axis/" target="_blank">
+                <div class="shadow overflow-hidden" style="width:100%; height:180px">
+                  <img src="images/import_bridge.png" class="img img-responsive img-thumbnail" alt="Import data in odoo for Sales, Purchase, Invoice, Import Stock Inventory, Import Product, Bill of material(BOM), Payment, Bank Statement, All Entry, Order Picking, Product, Customer, Stock, Account charts, Sales Pricelist, Supplier all data import in odoo using EXCEL or CSV">
+                </div></a>
+                <a href="https://apps.odoo.com/apps/modules/13.0/import_bridge_axis/" target="_blank" style="font-size:24px; padding-top:12px; padding-bottom:15px; line-height:normal; border-radius:5px; color:#fff; text-transform:uppercase; display:inline-block; max-width:366px; width:100%; margin-top:30px; margin-bottom:30px; background-color:#00a1b1">Buy Now</a>
+              </div>
+            </div>
+          <div class="col-lg-4 col-md-6 text-center" style="margin-bottom:20px">
+            <div class="page_design_portfolio">
+              <div class="page_design_title" style="border-bottom:1px solid #f0f0f0; margin-bottom:10px; padding:8px; background-color:#d9cfcf; border-radius:5px">
+                <h2 style="margin-bottom:0; color:#333; font-size:16px">POS Bundle Product Pack, pos combo pack, all in one combo pack product kit for pos in odoo</h2>
+              </div>
+              <a href="https://apps.odoo.com/apps/modules/13.0/pos_combo_bundle_pack_axis/" target="_blank">
+                <div class="shadow overflow-hidden" style="width:100%; height:180px">
+                  <img src="images/pos_bundle.png" class="img img-responsive img-thumbnail" alt="Import POS Orders from Excel, Import POS Orders from CSV in odoo">
+                </div></a>
+                <a href="https://apps.odoo.com/apps/modules/13.0/pos_combo_bundle_pack_axis/" target="_blank" style="font-size:24px; padding-top:12px; padding-bottom:15px; line-height:normal; border-radius:5px; color:#fff; text-transform:uppercase; display:inline-block; max-width:366px; width:100%; margin-top:30px; margin-bottom:30px; background-color:#00a1b1">Buy Now</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center" style="margin-bottom:20px">
+              <div class="page_design_portfolio">
+                <div class="page_design_title" style="border-bottom:1px solid #f0f0f0; margin-bottom:10px; padding:8px; background-color:#d9cfcf; border-radius:5px">
+                  <h2 style="margin-bottom:0; color:#333; font-size:16px">Import POS Orders from Excel,Import POS Orders from CSV in odoo</h2>
+                </div>
+                <a href="https://apps.odoo.com/apps/modules/14.0/pos_import_records/">
+                  <div class="shadow overflow-hidden" style="width:100%; height:180px">
+                    <img class="img-fluid" alt="Import POS Orders from Excel,Import POS Orders from CSV in odoo" src="images/import_pos_orders.png" style="height:auto; width:100%">
+                  </div></a>
+                  <a href="https://apps.odoo.com/apps/modules/14.0/pos_import_records/" target="_blank" style="font-size:24px; padding-top:12px; padding-bottom:15px; line-height:normal; border-radius:5px; color:#fff; text-transform:uppercase; display:inline-block; max-width:366px; width:100%; margin-top:30px; margin-bottom:30px; background-color:#00a1b1">Buy Now</a>
+                </div>
+              </div>
+            </div>
+
+        </div>
+            
+
+          <section class="container-fluid">
+           <div class="oe_row oe_spaced" style="width:100%">
+           <h3 class="oe_slogan" style="font-size: 26px;font-weight: 300;opacity: 0.5;color: #333333;font-family: Lato,Open Sans, Helvetica, Sans; margin-top: 32px;margin-bottom: 32px;text-align: center;">For Technical help and support</h3>
+                      <center>
+                          <h3>
+                              <a style="color: #21B799;text-decoration: none;font-weight: 600;" href="mailto:business@axistechnolabs.com">business@axistechnolabs.com</a>
+                          </h3>
+                          <h3>
+                              <a style="color: #21B799;text-decoration: none;font-weight: 600;" href="skype:chirag_shah10?chat">For Skype support: Axis Technolabs</a>
+                          </h3>
+                      </center>
+                  </div>
+              </section>
+</body>
+</html>
+
+
+
+          

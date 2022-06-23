@@ -1,0 +1,12 @@
+<odoo>
+	<data noupdate="1">
+		<menuitem id="menu_sale_invoicing_import_menu" name="Import" parent="sale.sale_menu_root" sequence="400"/>
+
+       <menuitem id="action_import_product" name="Import Product Template" sequence="1" action="action_import_product" parent="menu_sale_invoicing_import_menu"
+              />
+
+   </data>
+</odoo>
+
+
+
