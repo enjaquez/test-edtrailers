@@ -10,7 +10,7 @@ class Datos_facturas(models.Model):
 
 	_inherit = 'account.move'
 	tipo_factura=fields.Selection([('PUE','PUE - Pago en una sola exhibición'),
-	                           ('PPD','PPD - Pago en parcialidades o diferido')])
+	                           ('PPD','PPD - Pago en parcialidades o diferido')], required=True)
 
 	@api.constrains('tipo_factura','l10n_mx_edi_payment_method_id')
 	def _validate_tipo_factura(self):
