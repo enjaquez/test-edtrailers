@@ -8,7 +8,7 @@ class Datos_facturas(models.Model):
 	tipo_factura=fields.Selection([('PUE','PUE - Pago en una sola exhibición'),
 	                           ('PPD','PPD - Pago en parcialidades o diferido')])
 
-	@api.constrains('l10n_mx_edi_payment_policy')
+	@api.constrains('tipo_factura')
 	def _validate_tipo_factura(self):
 		for record in self:
 			if record.tipo_factura == 'PUE':
