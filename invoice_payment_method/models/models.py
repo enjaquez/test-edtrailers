@@ -15,4 +15,6 @@ class Datos_facturas(models.Model):
 			if record.tipo_factura == 'PUE' and record.l10n_mx_edi_payment_method_id.name == 'Por definir':
 				raise ValidationError(_('Si el método de pago es PUE, entonces la forma de pago debe ser diferente a 99 - Por definir - Selecciona otras opciones'))
 
+			if record.tipo_factura == 'PPD' and record.l10n_mx_edi_payment_method_id.name != 'Por definir':
+				raise ValidationError(_('Si el método de pago es PPD, entonces la forma de pago debe ser  99 - Por definir'))
 
