@@ -9,7 +9,7 @@ class Datos_facturas(models.Model):
 	                           ('PPD','PPD - Pago en parcialidades o diferido')])
 
 	@api.constrains('l10n_mx_edi_payment_policy')
-	def _validate_l10n_mx_edi_payment_policy(self):
+	def _validate_tipo_factura(self):
 		for record in self:
-			if record.l10n_mx_edi_payment_policy == 'PUE':
+			if record.tipo_factura == 'PUE':
 				raise ValidationError(_('El método seleccionado es PUE'))
