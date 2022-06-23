@@ -2,6 +2,10 @@
 from odoo import models, exceptions, fields, api, _
 from odoo.exceptions import UserError, ValidationError
 
+import datetime
+from datetime import timedelta
+from dateutil import tz
+
 class Datos_facturas(models.Model):
 
 	_inherit = 'account.move'
@@ -23,4 +27,14 @@ class Datos_facturas(models.Model):
 
 			if ( record.partner_id.vat == 'XAXX010101000' or record.partner_id.vat == 'XEXX010101000' ) and record.l10n_mx_edi_usage != 'P01':
 				raise ValidationError(_('El Uso debe ser Por Definir, selecciona la opción correctamente'))
+
+	@api.onchange('tipo_factura')
+	def _check_tipo_factura(self):
+		if self.tipo_factura == 'PPD':
+			self.invoice_date_due = datetime.datetime.now() + timedelta(days=30)
+
+
+
+
+
 
