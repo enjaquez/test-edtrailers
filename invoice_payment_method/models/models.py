@@ -2,7 +2,6 @@
 from odoo import models, exceptions, fields, api, _
 from odoo.exceptions import UserError, ValidationError
 
-
 class Datos_facturas(models.Model):
 
 	_inherit = 'account.move'
@@ -14,6 +13,3 @@ class Datos_facturas(models.Model):
     	for record in self:
     		if record.l10n_mx_edi_payment_policy == 'PUE':
     			raise ValidationError(_('El método seleccionado es PUE'))
-
-
-
