@@ -11,7 +11,7 @@ class Datos_facturas(models.Model):
 	@api.constrains('tipo_factura','l10n_mx_edi_payment_method_id')
 	def _validate_tipo_factura(self):
 		for record in self:
-			raise ValidationError (record.l10n_mx_edi_usage.name)
+			raise ValidationError (record.l10n_mx_edi_usage)
 			if record.tipo_factura == 'PUE' and record.l10n_mx_edi_payment_method_id.name == 'Por definir':
 				raise ValidationError(_('Si el método de pago es PUE, entonces la forma de pago debe ser diferente a 99 - Por definir - Selecciona otras opciones'))
 
