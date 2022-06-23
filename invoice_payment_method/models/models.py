@@ -11,9 +11,9 @@ class Datos_facturas(models.Model):
 	                           ('PPD','PPD - Pago en parcialidades o diferido')])
 
 #realizar las validaciones al momento de guardar
-def write(self, values):
-    for move in self:
-        if not move.tipo_factura:
-            raise UserError(_("Seleccione el Metodo de Pago"
-                              "e intente nuevamente."))
+@api.constrains('tipo_factura')
+def _validate(self):
+    if self.tipo_factura:
+    	raise UserError(_("Seleccione el Metodo de Pago"
+                        	"e intente nuevamente."))
 
