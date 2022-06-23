@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api, _
-from odoo.exceptions import UserError, Warning
+from odoo.exceptions import UserError, ValidationError, Warning
 
 
 class Datos_facturas(models.Model):
@@ -14,6 +14,5 @@ class Datos_facturas(models.Model):
 @api.constrains('tipo_factura')
 def _validate(self):
     if self.tipo_factura:
-    	raise UserError(_("Seleccione el Metodo de Pago"
-                        	"e intente nuevamente."))
+    	raise ValidationError("Seleccione el Metodo de Pago e intente nuevamente.")
 
