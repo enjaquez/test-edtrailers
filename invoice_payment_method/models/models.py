@@ -12,7 +12,6 @@ class Datos_facturas(models.Model):
 	def _validate_tipo_factura(self):
 		for record in self:
 			if record.tipo_factura == 'PUE' and record.l10n_mx_edi_payment_method_id == '99':
-				raise ValidationError(_('Si el método de pago es PUE, entonces la forma de pago' _
-				  'debe ser diferente a 99 - Por definir - Selecciona otras opciones'))
+				raise ValidationError(_('Si el método de pago es PUE, entonces la forma de pago debe ser diferente a 99 - Por definir - Selecciona otras opciones'))
 
 
