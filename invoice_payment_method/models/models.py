@@ -27,4 +27,4 @@ def write(self, values):
         if not move.tipo_factura:
             raise UserError(_("Seleccione el Metodo de Pago"
                               "e intente nuevamente."))
-return result
+
