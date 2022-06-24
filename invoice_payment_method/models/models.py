@@ -24,7 +24,7 @@ class Datos_facturas(models.Model):
 			if record.tipo_factura == 'PPD' and record.l10n_mx_edi_payment_method_id.name != 'Por definir':
 				raise ValidationError(_('Si el método de pago es PPD, entonces la forma de pago debe ser  99 - Por definir'))
 
-			if record.partner_id.vat != 'XAXX010101000' and record.partner_id.vat != 'XEXX010101000' and record.partner_id.vat != '' and record.l10n_mx_edi_usage == 'P01':
+			if record.partner_id.vat != 'XAXX010101000' and record.partner_id.vat != 'XEXX010101000' and record.partner_id.vat != 'false' and record.l10n_mx_edi_usage == 'P01':
 				raise ValidationError(_('El Uso debe ser diferente a Por Definir, selecciona otra opción'))
 
 			if ( record.partner_id.vat == 'XAXX010101000' or record.partner_id.vat == 'XEXX010101000' ) and record.l10n_mx_edi_usage != 'P01':
