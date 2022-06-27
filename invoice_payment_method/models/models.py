@@ -18,7 +18,6 @@ class Datos_facturas(models.Model):
 	@api.constrains('tipo_factura','l10n_mx_edi_payment_method_id')
 	def _validate_tipo_factura(self):
 		for record in self:
-			record.invoice_date_due = datetime.datetime.now() + timedelta(days=30)
 			#raise ValidationError (record.partner_id.country_id.name)
 			if record.tipo_factura == 'PUE' and record.l10n_mx_edi_payment_method_id.name == 'Por definir':
 				raise ValidationError(_('Si el método de pago es PUE, entonces la forma de pago debe ser diferente a 99 - Por definir - Selecciona otras opciones'))
@@ -31,6 +30,11 @@ class Datos_facturas(models.Model):
 
 			if ( record.partner_id.vat == 'XAXX010101000' or record.partner_id.vat == 'XEXX010101000' ) and record.l10n_mx_edi_usage != 'P01':
 				raise ValidationError(_('El Uso debe ser Por Definir, selecciona la opción correctamente'))
+			if self.tipo_factura == 'PPD':
+				self.invoice_date_due = datetime.datetime.now() + timedelta(days=30)
+			if self.tipo_factura == 'PUE':
+				self.invoice_date_due = datetime.datetime.now()
+
 
 	@api.onchange('tipo_factura')
 	def _check_tipo_factura(self):
