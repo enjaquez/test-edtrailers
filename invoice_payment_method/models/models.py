@@ -13,7 +13,7 @@ class Datos_facturas(models.Model):
 	                           ('PPD','PPD - Pago en parcialidades o diferido')], 
 	                           string="Metodo de pago",
 	                           required=True,
-	                           default='PPD')
+	                           default='PUE')
 
 	@api.constrains('tipo_factura','l10n_mx_edi_payment_method_id')
 	def _validate_tipo_factura(self):
