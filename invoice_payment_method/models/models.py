@@ -36,6 +36,8 @@ class Datos_facturas(models.Model):
 	def _check_tipo_factura(self):
 		if self.tipo_factura == 'PPD':
 			self.invoice_date_due = datetime.datetime.now() + timedelta(days=30)
+		if self.tipo_factura == 'PUE':
+			self.invoice_date_due = datetime.datetime.now()
 
 
 
