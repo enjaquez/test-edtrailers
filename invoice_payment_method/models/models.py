@@ -30,10 +30,10 @@ class Datos_facturas(models.Model):
 
 			if ( record.partner_id.vat == 'XAXX010101000' or record.partner_id.vat == 'XEXX010101000' ) and record.l10n_mx_edi_usage != 'P01':
 				raise ValidationError(_('El Uso debe ser Por Definir, selecciona la opción correctamente'))
-			if self.tipo_factura == 'PPD':
-				self.invoice_date_due = datetime.datetime.now() + timedelta(days=30)
-			if self.tipo_factura == 'PUE':
-				self.invoice_date_due = datetime.datetime.now()
+			if record.tipo_factura == 'PPD':
+				record.invoice_date_due = datetime.datetime.now() + timedelta(days=30)
+			if record.tipo_factura == 'PUE':
+				record.invoice_date_due = datetime.datetime.now()
 
 
 	@api.onchange('tipo_factura')
